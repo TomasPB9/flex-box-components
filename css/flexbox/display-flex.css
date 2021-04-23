@@ -1,0 +1,9 @@
+.displayFlex{
+  display: flex;
+}
+
+.displayFlex .box + .box{ /*una caja que este a lado de otra caja recibe ese margen*/
+  /*solo lo aplica a las cajas dentro de displayFlex*/
+  margin-inline-start: 1rem;
+}
+
