@@ -1,0 +1,11 @@
+.flexWrap{
+  display: flex;
+  overflow: auto; /*habilita scroll si los elementos exceden el tamaño del viewport*/
+  flex-wrap: nowrap;
+  flex-wrap: wrap; /*cuando ya no caben en el viewport genera otra linea y los coloca abajo*/
+  flex-direction: row-reverse; /* intercambia el direccion de la columna*/
+  flex-wrap: wrap-reverse; /*intercambia la posicion de las lineas dentro del wrap*/
+
+  /*esta linea de codigo hace lo mismo*/
+  flex-flow: row-reverse wrap-reverse; /*primer valor la direccion y el segundo el wrap*/
+}

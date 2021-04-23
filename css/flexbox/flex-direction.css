@@ -1,4 +1,7 @@
 .flexDirection{
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: column-reverse; /*hace que el mensaje más reciente  este hasta abajo*/
+  max-block-size: 200px; /*tamaño máximo para el bloque*/
+  overflow: auto; /*solo si los elementos(mensajes) exceden el tamaño maximo del bloque definido,
+  de este manera habilita el scroll, de lo contrario no se habilita*/
 }
