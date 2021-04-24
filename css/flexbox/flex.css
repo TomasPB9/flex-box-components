@@ -1,0 +1,35 @@
+.flex{
+  display: flex;
+  background: lightgray;
+}
+
+.flex > * {
+  /* border: 1px solid red; */
+  /*flex-grow: 2; */  /*capacidad de cuanto se agranda*/
+  /*flex-shrink: ; */ /*capacidad de cuanto se achica*/
+  /*flex-basis: 100px; */ /*tamaño por defecto de un elemento (auto => osea que se estiren segun el tamaño)*/
+}
+
+.flex > div {
+  border: 1px solid red;
+  /* flex-grow: 1; */
+  /* flex-basis: 100%; */
+
+  /*flex:1 equivale a flex grow:1, flex-shrink:1 y flex-basis:0%*/
+  /* el elemento con esta propiedad pasa a ocupar el resto del espacio que este disponbile
+  dentro del flex container */
+  flex: 1;
+  /* flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%; */
+}
+
+.flex > img {
+  inline-size: 400px;
+  flex-shrink: 0; /* por defecto esta en 1 , por lo que el elemento se achica*/
+}
+
+/* .flex > p{
+  flex-grow: 2;
+  flex-basis: 50px;
+} */
